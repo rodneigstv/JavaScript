@@ -1,0 +1,8 @@
+package sevices;
+
+public interface OnlinePaymentService {
+	
+	
+	
+
+}

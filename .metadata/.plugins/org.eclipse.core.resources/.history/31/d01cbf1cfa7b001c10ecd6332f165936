@@ -1,0 +1,32 @@
+package Aplication;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner leia = new Scanner (System.in);
+		
+		System.out.print("Enter account number: ");
+		Account.numeroConta = leia.nextInt();
+		
+		System.out.print("Enter account name: ");
+		Account.name = leia.nextLine();
+
+		System.out.println("Is there na initial deposit (y/n)? ");
+		char simNao = leia.next().charAt(2);
+		Account.balance = simNao;
+		
+		Account conta = new Account();
+		
+		
+		
+		
+		
+		leia.close();
+
+	}
+
+}

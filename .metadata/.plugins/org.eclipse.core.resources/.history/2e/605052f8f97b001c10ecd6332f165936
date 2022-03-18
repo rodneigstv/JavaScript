@@ -1,0 +1,44 @@
+package Aplication;
+
+public class Account {
+
+	private String numeroConta;
+	public String name;
+	public double balance;
+	
+	public Account() {
+	}
+
+	public Account(String numeroConta, String name, double balance) {
+		this.numeroConta = numeroConta;
+		this.name = name;
+		this.balance = balance;
+	}
+
+	public String getNumeroConta() {
+		return numeroConta;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+	@Override
+	public String toString() {
+		return "Account [numeroConta=" + numeroConta + ", name=" + name + ", balance=" + balance + "]";
+	}
+	
+
+}

@@ -1,0 +1,17 @@
+package entidade;
+
+public interface IConta {
+	
+    void sacar(double valor);
+
+    void depositar(double valor);
+
+    void transferir(Conta contaDestino, double valor);
+
+    void limiteEmprestimo (double valor);
+    
+    void saldoAtualizado (double valor);
+    
+    void imprimirExtrato();
+
+}

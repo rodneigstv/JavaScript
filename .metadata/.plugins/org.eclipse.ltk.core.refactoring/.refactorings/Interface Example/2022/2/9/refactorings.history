@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;model.services.BasilTaxService&apos; to &apos;BrasilTaxService&apos;&#x0A;- Original project: &apos;Interface Example&apos;&#x0A;- Original element: &apos;model.services.BasilTaxService&apos;&#x0A;- Renamed element: &apos;model.services.BrasilTaxService&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;BasilTaxService&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;model.services{BasilTaxService.java[BasilTaxService" matchStrategy="1" name="BrasilTaxService" qualified="false" references="true" similarDeclarations="false" stamp="1645401504585" textual="false" version="1.0"/>
+</session>

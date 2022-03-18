@@ -1,0 +1,28 @@
+package sevices;
+
+import entities.Contract;
+
+public class ContractService {
+	
+	private OnlinePaymentService paymentservice;
+
+	public ContractService(OnlinePaymentService paymentservice) {
+		super();
+		this.paymentservice = paymentservice;
+	}
+	
+	public OnlinePaymentService getPaymentservice() {
+		return paymentservice;
+	}
+
+	public void setPaymentservice(OnlinePaymentService paymentservice) {
+		this.paymentservice = paymentservice;
+	}
+
+	public void processContract(Contract contract, Integer months) {
+		
+	}
+	
+	
+
+}

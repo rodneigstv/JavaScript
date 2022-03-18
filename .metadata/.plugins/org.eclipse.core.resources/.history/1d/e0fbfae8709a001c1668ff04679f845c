@@ -1,0 +1,25 @@
+package sevices;
+
+import entities.Contract;
+
+public class PaypalService implements OnlinePaymentService{
+	
+	private Contract contract = new Contract();
+	private double fixedAmount = 0;
+	
+	public Double interest(Double amount, Integer months) {
+	  //  amount = contract.getTotalValue() / months;
+		for (int i = 1; i <= months ; i++) {
+		    fixedAmount = amount + 0.01 * i;
+		}
+		return fixedAmount;
+	}
+
+	public Double paymentFee (Double amount) {
+		amount = fixedAmount = 0.02;
+		return amount;
+	}
+	
+	
+	
+}

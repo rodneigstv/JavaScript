@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;entities.shape.java&apos; to &apos;Shape.java&apos;&#x0A;- Original project: &apos;Abstratos&apos;&#x0A;- Original element: &apos;entities.shape.java&apos;&#x0A;- Renamed element: &apos;entities.Shape.java&apos;" description="Rename compilation unit &apos;shape.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;entities{shape.java" name="Shape.java" references="false" stamp="1644896681920" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+1644641671853	Rename type 'DioProjetoSpringApplication'
+1644646837789	Delete element
+1644650637183	Extract local variable 'cep'
+1644651782775	Extract method 'salvarClienteCep'

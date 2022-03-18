@@ -1,0 +1,45 @@
+package application;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Contract;
+import entities.Installment;
+
+public class program {
+	
+	public static void main(String[] args) throws ParseException {
+		Locale.setDefault(Locale.US);
+		Scanner leia = new Scanner (System.in);
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		
+		List<Installment> installment = new ArrayList<>();
+		
+		System.out.println("Enter contract data: ");
+		
+		System.out.print("Number: ");
+		int number = leia.nextInt();
+		
+		System.out.print("Date (dd/MM/yyyy): ");
+		Date date = sdf.parse(leia.next());
+		
+		System.out.print("Contract value: ");
+		double totalValue = leia.nextDouble();
+		
+		Contract contract = new Contract(number, date, totalValue);
+		
+		
+		
+		
+		
+		
+		
+		leia.close();
+	}
+
+}

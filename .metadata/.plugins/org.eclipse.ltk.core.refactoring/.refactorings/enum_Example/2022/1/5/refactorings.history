@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;entities.enuns&apos; to &apos;entities.enums&apos;&#x0A;- Original project: &apos;enum_Example&apos;&#x0A;- Original element: &apos;enum_Example/src/entities.enuns&apos;&#x0A;- Renamed element: &apos;enum_Example/src/entities.enums&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;entities.enuns&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;entities.enuns" name="entities.enums" qualified="false" references="true" stamp="1643413814643" textual="false" version="1.0"/>
+</session>

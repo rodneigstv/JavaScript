@@ -1,0 +1,34 @@
+package Aplication;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner leia = new Scanner (System.in);
+		
+		Account conta = new Account();
+		
+		System.out.print("Enter account number: ");
+		conta.numeroConta = leia.nextInt();
+		
+		System.out.print("Enter account name: ");
+		leia.next();
+		conta.name = leia.nextLine();
+
+		System.out.println("Is there na initial deposit (y/n)? ");
+		conta.sn = leia.nextLine();
+		if (conta.sn == "y") {
+			System.out.print("Enter initial deposit value: ");
+			conta.balance = leia.nextDouble();
+		}
+		
+		
+		
+		leia.close();
+
+	}
+
+}

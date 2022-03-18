@@ -1,0 +1,9 @@
+package Aplication;
+
+public class Banco {
+
+	private String conta;
+	public String name;
+	
+	
+}

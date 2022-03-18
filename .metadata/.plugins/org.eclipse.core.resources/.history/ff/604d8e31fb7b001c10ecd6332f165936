@@ -1,0 +1,56 @@
+package Aplication;
+
+public class Account {
+
+	public static Integer numeroConta;
+	public static String name;
+	public static double balance;
+	
+	public Account() {
+	}
+
+	public Account(Integer numeroConta, String name, double balance) {
+		this.numeroConta = numeroConta;
+		this.name = name;
+		this.balance = balance;
+	}
+
+	public Integer getNumeroConta() {
+		return numeroConta;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+	@Override
+	public String toString() {
+		return  "\nAccount=" + numeroConta 
+				+ ", name: " + name 
+				+ ", Balance: %.2f" + balance;
+	}
+	
+	public void deposit(double amount) {
+		balance += amount;
+	}
+	
+	public void withdraw (double amount) {
+		balance -= amount + 5.00; 
+	}
+	
+	
+	
+
+}

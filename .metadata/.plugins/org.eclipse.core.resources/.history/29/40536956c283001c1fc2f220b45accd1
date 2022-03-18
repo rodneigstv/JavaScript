@@ -1,0 +1,23 @@
+package entidade;
+
+public class ContaCorrente extends Conta {
+
+	@Override
+	public void limiteEmprestimo(double valor) {
+		if (valor <= limiteEmprestimo) {
+   		 depositar(valor);
+   	    }
+		
+	}
+	
+	public ContaCorrente(Cliente cliente) {
+		super(cliente);
+	} 
+	
+	@Override
+	public void imprimirExtrato() {
+		System.out.println("*** Extrato Conta Corrente ***");
+		super.ImprimirInfosComuns();
+	}
+
+}

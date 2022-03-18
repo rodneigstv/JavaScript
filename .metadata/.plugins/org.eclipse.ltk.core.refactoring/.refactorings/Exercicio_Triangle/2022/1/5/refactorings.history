@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Aplication.Area&apos; to &apos;program&apos;&#x0A;- Original project: &apos;Problema_Exemplo&apos;&#x0A;- Original element: &apos;Aplication.Area&apos;&#x0A;- Renamed element: &apos;Aplication.program&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Area&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Aplication{Area.java[Area" matchStrategy="1" name="program" qualified="false" references="true" similarDeclarations="false" stamp="1642987688601" textual="false" version="1.0"/>
+</session>

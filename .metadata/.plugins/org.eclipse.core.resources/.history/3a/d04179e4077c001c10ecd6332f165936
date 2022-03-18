@@ -1,0 +1,55 @@
+package Aplication;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner leia = new Scanner (System.in);
+		Account conta;
+		
+		System.out.print("Enter account number: ");
+		int numeroConta = leia.nextInt();
+		
+		System.out.print("Enter account name: ");
+		leia.nextLine();
+		String name = leia.nextLine();
+
+		System.out.println("Is there na initial deposit (y/n)? ");
+		char sn = leia.next().charAt(0);
+		if (sn == 'y') {
+			System.out.print("Enter initial deposit value: ");
+			double initialDeposit = leia.nextDouble();
+			conta = new Account (numeroConta, name, initialDeposit);
+		}else {
+			conta = new Account (numeroConta, name);
+		}
+		
+		System.out.println();
+		System.out.println("Account data:");
+		System.out.println(conta);
+
+		System.out.println();
+		System.out.print("Enter a deposit value: ");
+		double depositValue = leia.nextDouble();
+		conta.deposit(depositValue);
+		System.out.println("Update account data:");
+		System.out.println(conta);
+
+		System.out.println();
+		System.out.print("Enter a withdraw value: ");
+		double withdrawValue = leia.nextDouble();
+		conta.withdraw(withdrawValue);
+		System.out.println("Update account data:");
+		System.out.println(conta);
+		
+		
+		
+		
+	   leia.close();
+
+	}
+
+}
